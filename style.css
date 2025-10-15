@@ -1,0 +1,15 @@
+body{
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 120vh;
+    background-color: grey;
+}
+
+.panel_left,
+panel_main {
+    flex: auto;
+}
