@@ -31,13 +31,73 @@
 
         .panel_left {
             flex: 1 1 300px;
-            background-color: bisque;
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            background-image: url(images/deathstar2.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: black;*/
         }
 
         .panel_main {
             flex: 1 1 450px;
-            background-color: red;
+            background-color: white;
         }
+
+        .legend {
+            color: white;
+            font-family: Arial, Arial, Helvetica, sans-serif ;
+        }
+
+        .logo {
+            background-color: green;
+            opacity: 50%;
+            min-height: 20%;
+            max-height: 40%;
+            width: 100%;
+            flex: auto;
+            overflow: hidden;
+        }
+
+        .icon{
+            max-width: 200px;
+            height: 100%;
+            object-fit: contain; 
+        }
+
+        .icon {
+            flex: 0 1 50px;
+        }
+
+        .icon_text{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            min-width: 0;
+            min-height: 0;
+            font-size: clamp(1rem, 5vh, 5rem);
+            line-height: 1.2;
+            justify-content: center;
+        }
+
+        .icon_text p{
+            flex:1 1 auto;
+            color:white;
+            display: flex;
+            margin: auto;
+        }
+
+        .legend,
+        .logo {
+            margin-top: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
 
         
     </style>
@@ -45,6 +105,20 @@
 <body>
     <div class="container">
         <div class="panel_left">
+
+            <div class="logo">
+                <img class="icon" src="images/vader2.png" alt="Lord Vader">
+                <div class="icon_text">
+                    <p>Join</p>
+                    <p>Lord</p>
+                    <p>Vader</p>
+                </div>
+            </div>
+
+            <div class="legend">
+                <p>Photo by dr. Starkiller</p>
+            </div>
+
 
         </div>
         <div class="panel_main">
