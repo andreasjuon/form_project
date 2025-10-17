@@ -97,6 +97,16 @@
             align-items: center;
         }
 
+        .signup-message {
+            margin: 0;
+            background-color: lightgrey;
+        }
+
+        .signup-message p {
+            margin: 0;
+            padding: 5px;
+        }
+
 
 
         
@@ -122,6 +132,65 @@
 
         </div>
         <div class="panel_main">
+
+            <div class="signup-section">
+                <div class="signup-message">
+                    <p>This is a very important cause! For the empire! Etc.! Please sign up and realized your wildest dreams!</p>
+                    <p>Search your feelings. You <em>know</em> it to be true.</p>
+                </div>
+
+                <div class="signup-form">
+                    <h1>Let's sign-up!</h1>
+                    <form class="signup-form">
+                        <div class="signup-form-name">
+                            <input required class="name" type="text" name="name" placeholder="First name*"
+                            value="" pattern = "^[a-zA-Z]$" size="30" maxlength="299">
+                            <label for="name" data-help="Example: Luke. (no special characters allowed, Elon.)">Name</label>
+                        </div>
+                        <div class="signup-form-surname">
+                            <input required class="surname" type="text" name="surname" placeholder="Surname*"
+                            value="" pattern = "^[a-zA-Z]$" size="30" maxlength="299">
+                            <label for="surname" data-help="Enter your surname. Hint: I am your father.">Surname</label>
+                        </div>
+                        <div class="signup-form-email">
+                            <input required class="email" type="email" name="email" placeholder="Your email*"
+                            value="">
+                            <label for="email" data-help="Please enter a valid email address. Example: uga@affensohn.com.">e-Mail</label>
+                        </div>
+                        <div class="signup-form-number">
+                            <input required class="number" type="number" name="number" placeholder="Your phone*"
+                            value="" size="30" maxlength="30">
+                            <label for="number" data-help="Please enter a valid number.">Number.</label>
+                        </div>
+                        <div class="signup-form-password">
+                            <input required class="password" type="password" name="password" placeholder="Your password*"
+                            value="" size="30" maxlength="30">
+                            <label for="password" data-help="Please enter a valid password.">Password.</label>
+                        </div>
+                        <div class="signup-form-password">
+                            <input required class="password" type="password" name="password2" placeholder="Confirm password*"
+                            value="" size="30" maxlength="30">
+                            <label for="password2" data-help="Please enter a valid password.">Confirm password.</label>
+                        </div>
+                        <div class="signup-form-comment">
+                            <textarea textarea="" id="comment" name="comment" rows="5" placeholder="Enter a comment (if you really feel you need to)"
+                            value="" size="30" maxlength="30"></textarea>
+                            <label for="comment" data-help="Please enter a valid comment.">Enter your comment.</label>
+                        </div>
+                        <div class="form-submit">
+                            <input name="submit" type="submit" id="submit" class="submit" value="Join the empire (forever)">
+                        </div>
+
+
+
+
+                        <div class="signup-form-surname">
+
+                        </div>
+
+                    </form>
+                </div>
+            </div>
             
         </div>
     </div>
